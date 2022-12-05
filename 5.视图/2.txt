@@ -1,0 +1,4 @@
+SELECT c_name, c_id_card ,SUM(pro_quantity*i_amount)  insurance_total_amount , sum(pro_income)  insurance_total_revenue
+FROM v_insurance_detail
+GROUP BY c_id_card, c_name
+ORDER BY insurance_total_amount DESC

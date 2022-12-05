@@ -1,0 +1,5 @@
+CREATE VIEW v_insurance_detail AS
+SELECT c_name, c_id_card, i_name, i_project, i_year, i_amount, pro_income, pro_purchase_time, pro_quantity, pro_status
+FROM client, insurance, property
+WHERE
+    c_id = pro_c_id AND pro_pif_id = i_id AND  pro_type = 2;
