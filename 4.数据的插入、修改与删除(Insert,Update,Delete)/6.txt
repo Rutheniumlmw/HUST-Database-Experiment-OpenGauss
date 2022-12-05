@@ -1,0 +1,6 @@
+UPDATE  property
+set pro_id_card = (
+    SELECT c_id_card
+    FROM CLIENT
+    WHERE c_id = pro_c_id
+)
