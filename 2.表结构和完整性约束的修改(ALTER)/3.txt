@@ -1,0 +1,2 @@
+ALTER TABLE addressbook MODIFY QQ char(12);
+ALTER TABLE addressbook ADD wechat char(12);
