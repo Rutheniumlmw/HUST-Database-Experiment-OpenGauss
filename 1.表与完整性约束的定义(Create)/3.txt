@@ -1,0 +1,16 @@
+CREATE TABLE dept
+(
+    deptNo INT PRIMARY KEY,
+    deptName varchar(32)
+);
+
+CREATE TABLE staff
+(
+    staffNo INT PRIMARY KEY,
+    staffName varchar(32),
+    gender char(1),
+    dob date,
+    Salary numeric(8, 2),
+    deptNo INT,
+    CONSTRAINT FK_staff_deptNo FOREIGN KEY(deptNo) REFERENCES dept(deptNo)
+)

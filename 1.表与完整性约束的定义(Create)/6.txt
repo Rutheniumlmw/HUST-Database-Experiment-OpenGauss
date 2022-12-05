@@ -1,0 +1,6 @@
+CREATE TABLE s
+(
+    sno CHAR(10) PRIMARY KEY,
+    name VARCHAR(32) NOT NULL,
+    id CHAR(18) Unique
+);

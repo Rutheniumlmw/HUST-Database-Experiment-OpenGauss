@@ -1,0 +1,2 @@
+gsql -h 127.0.0.1 -d postgres -U gaussdb -W 'Passwd123@123';
+create database beijing2022;
